@@ -26,8 +26,8 @@ public class Candlestick {
      * 
      * @param abertura   Preço de abertura
      * @param fechamento Preço de fechamento
-     * @param maximo     Preço Máximo
      * @param minimo     Preço Minimo
+     * @param maximo     Preço Máximo
      * @param volume     Volume negociado
      * @param data       Data da negociação
      */
@@ -60,21 +60,21 @@ public class Candlestick {
     }
 
     /**
-     * Retorna o preço de maximo
-     * 
-     * @return preço de maximo
-     */
-    public double getMaximo() {
-        return maximo;
-    }
-
-    /**
      * Retorna o preço de minimo
      * 
      * @return preço de minimo
      */
     public double getMinimo() {
         return minimo;
+    }
+
+    /**
+     * Retorna o preço de maximo
+     * 
+     * @return preço de maximo
+     */
+    public double getMaximo() {
+        return maximo;
     }
 
     /**
