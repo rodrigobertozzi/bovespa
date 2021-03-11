@@ -25,4 +25,11 @@ public class NegocioTest {
         //Arranjo, Ação e Asserção
         Negocio umNegocio = new Negocio(1.5, 4, null);
     }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void deveRetornarUmaExcecaoComPrecoNegativo()
+    {
+        //Arranjo, Ação e Asserção
+        Negocio umNegocio = new Negocio(-1.5, 4, LocalDate.now());
+    }
 }
